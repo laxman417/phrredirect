@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mobile Platform Test Framework - Callback</title>
+        <script>
+          
+			
+          
+			function myFunction() {
+			  var userAgent = window.navigator.userAgent;
+			  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+			 window.location.replace('peoplehrapp://);
+			}
+			};
+
+			function androidRedirect() 
+			{
+			 var userAgent = window.navigator.userAgent;
+			  if (userAgent.match(/android/i)) {
+			  location.href = "intent:#Intent;scheme=peoplehrapp://myHost?email=test@yopmail.com\&token=aasasasas23232323qdsds\&status=success;end"
+			  close()
+			  }
+			};
+			
+			
+        
+		
+        </script>
+    </head>
+    <body>
+        <div id="message">Signing you in...</div>
+		<a id="redirectToMobile" href="PeopleHrQA://">Href iOS</a>
+        <button onclick="myFunction()">onClick iOS</button>
+		<br/><br/>
+		<button onclick="androidRedirect()">Android</a>
+    </body>
+</html>
